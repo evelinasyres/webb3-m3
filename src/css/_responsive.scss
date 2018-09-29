@@ -1,0 +1,64 @@
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+    #container {
+        grid-template-areas:
+        "mainnav mainnav mainnav mainnav mainnav mainnav mainnav mainnav mainnav mainnav mainnav mainnav"
+        ". intro intro intro intro intro intro intro intro intro intro ."
+        ". . content content content content content content content content . .";
+    }
+
+    #mainnav {
+        padding: 2% 0;
+        box-shadow: none;
+    }
+
+    #intro {
+        h1 {
+            margin: 0 0 10% 0;
+        }
+
+        p {
+            width: 80%;
+            margin: 5% auto;
+            font-size: 1em;
+            padding: 6%;
+        }
+    }
+}
+
+@media screen and (max-width: 767px) {
+    #container {
+        grid-template-areas:
+        "mainnav mainnav mainnav mainnav mainnav mainnav mainnav mainnav mainnav mainnav mainnav mainnav"
+        "intro intro intro intro intro intro intro intro intro intro intro intro"
+        ". content content content content content content content content content content .";
+    }
+
+    #mainnav {
+        box-shadow: none;
+        font-size: 1.5em;
+        padding: 4% 0;
+    }
+
+    #intro {
+        h1 {
+            margin: 6% auto 10% auto;
+        }
+        p {
+            width: 80%;
+            padding: 10%;
+            box-shadow: none;
+            font-size: 1em;
+            line-height: 1.7;
+        }
+    }
+
+    #content {
+        grid-template-areas:
+        "img1 img1 img1 img1 img1 img1 img1 img1 img1 img1"
+        "img2 img2 img2 img2 img2 img2 img2 img2 img2 img2";
+
+        :nth-child(1) {
+            margin: 0 0 4% 0;
+        }
+    }
+}
